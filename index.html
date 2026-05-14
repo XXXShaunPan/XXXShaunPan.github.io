@@ -89,9 +89,11 @@
                 </div>
                 <div class="ui-panel log-preview">
                   <h3>Task Log</h3>
-                  <pre>[2026-05-13T23:30:35] INFO - Starting attempt 1
+                  <pre>
+[2026-05-13T23:30:35] INFO - Starting attempt 1
 [2026-05-13T23:30:35] INFO - Running TaskInstance
-[2026-05-13T23:30:36] INFO - Marking task as SUCCESS</pre>
+[2026-05-13T23:30:36] INFO - Marking task as SUCCESS</pre
+                  >
                 </div>
               </div>
             </div>
@@ -102,7 +104,8 @@
           <p class="eyebrow">Lovito Airflow Task Hub</p>
           <h1 id="hero-title">Lovito 任务中心</h1>
           <p class="hero-lede">
-            将 Airflow Web 中高频使用的 DAG 管理、任务触发、运行记录、重试详情与日志查看能力，整合为一款清晰高效的桌面工具。
+            将 Airflow Web 中高频使用的 DAG
+            管理、任务触发、运行记录、重试详情与日志查看能力，整合为一款清晰高效的桌面工具。
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#download">获取桌面端</a>
@@ -115,7 +118,8 @@
         <p class="section-kicker">Overview</p>
         <h2>延续 Airflow 工作流，降低网页端操作干扰。</h2>
         <p>
-          Lovito 任务中心聚焦 owner 为 Shaun 的 DAG 操作，集中呈现任务状态、运行参数、日志信息以及必要的手动控制能力。
+          Lovito 任务中心聚焦 owner 为 Shaun 的 DAG
+          操作，集中呈现任务状态、运行参数、日志信息以及必要的手动控制能力。
         </p>
         <figure class="product-image-card">
           <img
@@ -131,7 +135,9 @@
             <p class="section-kicker">DAG Library</p>
             <h2>在左侧完成 DAG 筛选、检索与状态控制。</h2>
             <p>
-              顶部分类基于 DAG tag 生成，支持 Paid Ads、Listing、买手和其他分类。DAG 左侧开关延续 Airflow 的操作习惯，仅授权系统用户可执行暂停与启用操作。
+              顶部分类基于 DAG tag 生成，支持 Paid
+              Ads、Listing、买手和其他分类。DAG 左侧开关延续 Airflow
+              的操作习惯，仅授权系统用户可执行暂停与启用操作。
             </p>
           </div>
           <div class="mini-screen screen-dags" aria-hidden="true">
@@ -155,7 +161,9 @@
             <p class="section-kicker">Trigger</p>
             <h2>按 DAG 提供结构化参数输入，减少手写 JSON。</h2>
             <p>
-              配置了 dag run conf fields 的 DAG 会展示专属输入框；未配置字段映射的 DAG 无需填写参数，保留默认 {} 即可触发。run id 留空时，系统会自动使用当前用户名与时间生成。
+              配置了 dag run conf fields 的 DAG
+              会展示专属输入框；未配置字段映射的 DAG 无需填写参数，保留默认 {}
+              即可触发。run id 留空时，系统会自动使用当前用户名与时间生成。
             </p>
           </div>
           <div class="mini-screen screen-trigger" aria-hidden="true">
@@ -175,7 +183,9 @@
             <p class="section-kicker">Runs & Logs</p>
             <h2>联动展示运行记录、重试记录与任务日志。</h2>
             <p>
-              选择 recent run 后自动加载对应 task tries，并在右侧展示任务日志。日志支持横向滚动与按等级着色，run conf 可点击放大并复制完整 JSON。
+              选择 recent run 后自动加载对应 task
+              tries，并在右侧展示任务日志。日志支持横向滚动与按等级着色，run
+              conf 可点击放大并复制完整 JSON。
             </p>
           </div>
           <div class="mini-screen screen-log" aria-hidden="true">
@@ -184,9 +194,11 @@
               <span>task success</span>
               <span>try 1</span>
             </div>
-            <pre>[2026-05-13T23:30:35] INFO - Dependencies all met
+            <pre>
+[2026-05-13T23:30:35] INFO - Dependencies all met
 [2026-05-13T23:30:36] INFO - Running task
-[2026-05-13T23:30:36] SUCCESS - Task exited</pre>
+[2026-05-13T23:30:36] SUCCESS - Task exited</pre
+            >
           </div>
         </article>
       </section>
@@ -198,32 +210,50 @@
           <article>
             <span>01</span>
             <h3>顶部按钮</h3>
-            <p>服务下拉用于切换 Airflow 地址；Owner 用于控制 DAG 过滤范围；重连会重新登录；刷新会同步 DAG 与远端配置。</p>
+            <p>
+              服务下拉用于切换 Airflow 地址；Owner 用于控制 DAG
+              过滤范围；重连会重新登录；刷新会同步 DAG 与远端配置。
+            </p>
           </article>
           <article>
             <span>02</span>
             <h3>DAG 列表</h3>
-            <p>分类按钮基于 tag 生成，搜索框支持按名称与描述检索。左侧开关用于启用或暂停 DAG。</p>
+            <p>
+              分类按钮基于 tag
+              生成，搜索框支持按名称与描述检索。左侧开关用于启用或暂停 DAG。
+            </p>
           </article>
           <article>
             <span>03</span>
             <h3>Trigger</h3>
-            <p>专属参数框会自动拼接 conf；未配置参数框的 DAG 无需填写。每个 DAG 同时 running / queued 超过 3 个时，将弹窗提示并阻止触发。</p>
+            <p>
+              专属参数框会自动拼接 conf；未配置参数框的 DAG 无需填写。每个 DAG
+              同时 running / queued 超过 3 个时，将弹窗提示并阻止触发。
+            </p>
           </article>
           <article>
             <span>04</span>
             <h3>Recent Runs</h3>
-            <p>点击 run 可切换任务上下文，点击 conf 摘要可放大查看并复制完整 JSON。</p>
+            <p>
+              点击 run 可切换任务上下文，点击 conf 摘要可放大查看并复制完整
+              JSON。
+            </p>
           </article>
           <article>
             <span>05</span>
             <h3>Task Tries</h3>
-            <p>用于查看同一个 task 的多次尝试记录，适合排查重试过程与失败后的恢复情况。</p>
+            <p>
+              用于查看同一个 task
+              的多次尝试记录，适合排查重试过程与失败后的恢复情况。
+            </p>
           </article>
           <article>
             <span>06</span>
             <h3>Task Log</h3>
-            <p>支持跟随当前 task、自动滚动、手动刷新、终止 task，以及清空当前日志窗口。</p>
+            <p>
+              支持跟随当前 task、自动滚动、手动刷新、终止
+              task，以及清空当前日志窗口。
+            </p>
           </article>
         </div>
       </section>
@@ -232,22 +262,32 @@
         <p class="section-kicker">Continuity</p>
         <h2>Trigger 后，客户端可安全关闭。</h2>
         <p>
-          任务运行在 Airflow 服务器上，不依赖客户端持续运行。重新打开程序时，将恢复至上次查看的 DAG、run、task 与日志位置，便于继续追踪运行结果。
+          任务运行在 Airflow
+          服务器上，不依赖客户端持续运行。重新打开程序时，将恢复至上次查看的
+          DAG、run、task 与日志位置，便于继续追踪运行结果。
         </p>
       </section>
 
       <section id="download" class="download-section reveal">
         <p class="section-kicker">Download</p>
         <h2>面向日常任务值守场景。</h2>
-        <p>当前下载入口为样式占位，后续可接入正式安装包。</p>
+        <!-- <p>当前下载入口为样式占位，后续可接入正式安装包。</p> -->
         <div class="download-actions">
-          <a class="download-button" href="#" aria-label="下载 Windows 版">
+          <a
+            class="download-button"
+            href="https://github.com/XXXShaunPan/ScriptRepo/releases/download/lovito_task_hub_ver1.0.0/Lovito.Setup.1.0.0.exe"
+            aria-label="下载 Windows 版"
+          >
             <span>Download for</span>
             <strong>Windows</strong>
           </a>
-          <a class="download-button" href="#" aria-label="下载 macOS M 芯片版">
+          <a
+            class="download-button"
+            href="https://github.com/XXXShaunPan/ScriptRepo/releases/download/lovito_task_hub_ver1.0.0/Lovito.app.zip"
+            aria-label="下载 macOS M Silicon"
+          >
             <span>Download for</span>
-            <strong>macOS · M 芯片</strong>
+            <strong>macOS · M Silicon</strong>
           </a>
         </div>
       </section>
